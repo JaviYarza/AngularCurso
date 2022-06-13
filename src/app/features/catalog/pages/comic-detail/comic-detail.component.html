@@ -17,11 +17,11 @@
   />
 
   <p> <b>DESCRIPCION:</b>   {{comic.description}}</p>
-  <p> <b>ISBN:</b>   {{comic.isbn}}</p>
-  <p>NUMERO DE PAGINAS:   {{comic.pageCount}}</p>
+  <p > <b>ISBN:</b>   {{comic.isbn}}</p>
+  <p class="fechas">NUMERO DE PAGINAS:   {{comic.pageCount}}</p>
   <!-- <p *ngFor="let creator of comic.creators">      \ \ \ \ \    {{creator.name}} ({{creator.role}})</p> -->
   <p><b>CREADORES:</b> {{comic.creators | creators}}</p>
-  <p><b>FECHA DE SALIDA:    </b>{{comic.onsaleDate | date: 'shortDate' }}</p>
+  <p class="fechas"><b>FECHA DE SALIDA:    </b>{{comic.onsaleDate | date: 'shortDate' }}</p>
 
   <button (click)="addToCollection()" class="rainbow-button"> Añadir a la colección </button>
 
